@@ -1,20 +1,11 @@
 @model List<basics.Models.Computer>
-    <h1 class="mb-4">Computer List</h1>
-        <div class="row">
-            @foreach (var computer in Model)
-            {
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="~/img/@(string.IsNullOrEmpty(computer.Image) ? "placeholder.png" : computer.Image)" class="card-img-top" alt="@computer.Title" />
-                        <div class="card-body">
-                            <h5 class="card-title">@computer.Title</h5>
-                            <p class="card-text">@computer.Description</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-top-0">
-                            <!-- View Details now redirects to Index -->
-                            <a href="/computer" class="btn btn-outline-primary btn-sm">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
+
+<h1 class="mb-4">Computer List</h1>
+<div class="row">
+  @foreach (var computer in Model)
+  {
+    <!-- Burada partial’ın adını ve gönderdiğimiz parametreyi doğru yazıyoruz: -->
+    @await Html.PartialAsync("_ComputerCards", computer)
+  }
+  
+</div>
