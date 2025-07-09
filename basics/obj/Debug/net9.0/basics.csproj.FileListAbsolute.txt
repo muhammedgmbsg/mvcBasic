@@ -95,3 +95,4 @@ C:\aspLessons\basics\obj\Debug\net9.0\refint\basics.dll
 C:\aspLessons\basics\obj\Debug\net9.0\basics.pdb
 C:\aspLessons\basics\obj\Debug\net9.0\basics.genruntimeconfig.cache
 C:\aspLessons\basics\obj\Debug\net9.0\ref\basics.dll
+C:\aspLessons\basics\obj\Debug\net9.0\basics.sourcelink.json
